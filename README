@@ -16,4 +16,6 @@ will build an executable jar in the target directory.
 
 From the base directory either execute java -jar ./target/api.jar or cd to the target directory and execute java -jar ./api.jar.
 
-The Web Services will be located at http://localhost:9080/api and the Front End will be
+The Web Services will be located at http://localhost:9080/api and the Front End will be located at http://localhost:9080/index.html.
+
+Please let me know if you have any issues.
