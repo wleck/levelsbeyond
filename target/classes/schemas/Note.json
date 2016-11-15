@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Note",
+    "description": "An indexed note",
+    "type": "object",
+
+	"properties" : {
+	    "id" : {
+	        "$ref" : "#/definitions/id"
+	    },
+	    "body" : {
+	        "$ref" : "#/definitions/body"
+	    }
+	},
+	
+	"definitions" : {
+	    "id" : {
+	        "type" : "integer"
+	    },
+	    "body" : {
+	        "type" : "string"
+	    }
+	},
+	
+	"additionalProperties" : false
+ }

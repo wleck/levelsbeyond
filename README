@@ -1,0 +1,19 @@
+Levels Beyond Coding Assignment
+
+This project was build and tested using Windows 10, MyEclipse, and Postman using Java 8 and Maven 3.3.1.  It uses
+Java 8 constructs so should only be executed and built using Java 8.
+
+It was built with CXF and CXF's implementation of Spring Boot.  Once built, it will create an executable jar.
+
+This application will create a web server at port 9080 due to a port 8080 conflict on my system.  If another port is desired, 
+you should change the port in the src/main/resources/application.properties at server.port.
+
+How to build
+Please only use Java 8 to build and execute this application.
+
+Execute mvn package org.springframework.boot:spring-boot-maven-plugin:1.4.2.RELEASE:repackage from the base directory.  This 
+will build an executable jar in the target directory.
+
+From the base directory either execute java -jar ./target/api.jar or cd to the target directory and execute java -jar ./api.jar.
+
+The Web Services will be located at http://localhost:9080/api and the Front End will be

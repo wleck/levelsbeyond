@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	font-family: sans-serif;
+}
+
+ul {
+	margin: 0.75em 0;
+	padding: 0 1em;
+	list-style: none;
+}
+
+li:before {
+	content: "";
+	border-color: transparent #111;
+	border-style: solid;
+	border-width: 0.35em 0 0.35em 0.45em;
+	display: block;
+	height: 0;
+	width: 0;
+	left: -1em;
+	top: 0.9em;
+	position: relative;
+}
+
+.issueTitle {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.issueIndent {
+	width: 2%;
+	float: left;
+}
+
+.issueData {
+	margin-left: 2%;	
+}
+
+.issueItem {
+	width: 10%;
+	float: left;
+	font-weight: bold;
+}
+
+.issueText {
+	font-style: italic;
+	margin-left: 10%;
+}
+
+.clear {
+	clear: both;
+}
+
+.dateHeader {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5 em;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="AngularIssues">
+  <head>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/controller.js"></script>
+    <title>Angular Issues</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=ISO-8859-1">
+    
+    <link rel="stylesheet" type="text/css" href="styles/levelsBeyondStyle.css">
+
+  </head>
+  
+  <body>
+  	<div class="dateHeader" ng-app ng-controller="controller as main">
+  		Angular Issues from {{lastWeek | date: 'yyyy-MM-dd'}} to {{date | date: 'yyyy-MM-dd'}}
+  	</div>
+  	<div ng-app ng-controller="controller">
+  		<ul>
+  			<li ng-repeat="issues in gitData" >
+  				<div class="issueTitle">{{issues.title}}</div>
+  				<div class="issueContainer">
+  					<div class="issueIndent"></div>
+	  				<div class="issueData">
+	  					<div class="issueItem">Body:</div>
+		  				<div class="issueText">{{issues.body || issues.body.length > 0 ? issues.body : "No Description"}}</div>
+		  				<div class="clear"></div>
+		  			</div>
+	  				<div class="issueData">
+	  					<div class="issueItem">User:</div>
+		  				<div class="issueText">{{issues.user.login}}</div>
+		  				<div class="clear"></div>
+		  			</div>
+	  				<div class="issueData">
+	  					<div class="issueItem">Assignee:</div>
+		  				<div class="issueText">{{issues.assignee  ? issues.assignee : "Not yet assigned"}}</div>
+		  				<div class="clear"></div>
+		  			</div>
+  				</div>
+		  		<div>&nbsp;</div>
+  			</li>
+  			
+  		</ul>
+  		
+  	</div>
+  </body>
+</html>

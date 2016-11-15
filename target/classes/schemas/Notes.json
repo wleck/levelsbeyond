@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Notes",
+    "description": "A collections of notes",
+    "type": "object",
+    "properties" : {
+	    "Notes" : {
+		    "type" : "array",
+		    "items" : {
+		        "$ref" : "Note.json"
+		    }
+	    }
+    }
+ }
